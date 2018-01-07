@@ -1,0 +1,45 @@
+Blackjack Simulator
+===================
+Play a rounds of blackjack and evaluate various betting strategies.
+
+Detailed Description
+----------
+TODO(self): Add description
+
+Future work
+-------------
+### Game
+- Split support
+- Multi-active player support
+- Integrate seat/table classes
+- Dealer may not need to draw last card
+
+### Play Strategy
+- Generate TableRules object from YAML
+- Multiple configuration support
+- Load "closet" configuration
+
+### Stats
+- stats: use rounds instead of hands (required for split support)
+- Refactor stats
+- Constant spacing in stats printout
+
+### Betting
+- Gaussian scale for blackjack optimized strategy
+- Add basic blackjack optimized strategy
+- Clean-up kwargs passing shoe
+
+### Shoe
+- Save/restore shoe state
+
+### Testing
+- Add initial unit tests
+
+### Extensions
+- Add single hand various play strategy simulation
+
+### Optimizations
+Time per round: `~68 µs`
+
+- Multi-thread for larger number of hands
+- Increase efficiency of hand.GetValue()
